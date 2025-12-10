@@ -16,7 +16,6 @@ class TonerFactory extends Factory
         return [
             'stock_id' => Stock::factory(),         // Link to stocks (which has code & color)
             'printer_id' => Printer::factory(),
-            'yield_pages' => $this->faker->numberBetween(1000, 10000),
             'created_at' => now(),
             'updated_at' => now(),
         ];

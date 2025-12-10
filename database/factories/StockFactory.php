@@ -23,6 +23,7 @@ class StockFactory extends Factory
             'code' => strtoupper($this->faker->bothify('??-###')),
             'color' => $this->faker->randomElement(['Black', 'Cyan', 'Magenta', 'Yellow']),
             'quantity' => $this->faker->numberBetween(5, 30),
+            'yield_pages' => $this->faker->numberBetween(1000, 3000)
         ];
     }
 }
